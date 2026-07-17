@@ -721,7 +721,6 @@
       <div class="hero-dept-btns">
         <a href="#contact" class="dept-btn build" onclick="pickDept('build')">建築のお問い合わせ</a>
         <a href="#contact" class="dept-btn auto" onclick="pickDept('auto')">自動車のお問い合わせ</a>
-        <a href="#contact" class="dept-btn elec" onclick="pickDept('elec')">電機のお問い合わせ</a>
       </div>
       <p class="hero-free">✓ 相談・見積り無料　✓ 押し売り一切なし</p>
     </div>
@@ -969,7 +968,6 @@
         <h3 style="font-size:1.2rem;font-weight:700;color:#c0ffd8;margin-bottom:16px;">精度と信頼の<br>ものづくりを。</h3>
         <p>電機部では、親会社「下澤電機」から受け継いだ確かな技術と経験をもとに、ワイヤーハーネス加工・電機機具の組み立てを行っています。</p>
         <p>小ロット・多品種にも対応可能です。製造業のパートナーとして、ぜひご相談ください。</p>
-        <a href="#contact" class="btn btn-green" style="margin-top:8px;">電機部へのお問い合わせ</a>
       </div>
     </div>
   </div>
@@ -1111,10 +1109,6 @@
                 <option>中古車販売について</option>
                 <option>中古車買取について</option>
               </optgroup>
-              <optgroup label="電機部">
-                <option>ワイヤーハーネス加工について</option>
-                <option>電機機具組み立てについて</option>
-              </optgroup>
               <option>その他・一般的なご質問</option>
             </select>
           </div>
@@ -1195,8 +1189,7 @@
     if (!sel) return;
     var map = {
       build: '新築工事について',
-      auto:  '中古車販売について',
-      elec:  'ワイヤーハーネス加工について'
+      auto:  '中古車販売について'
     };
     if (map[kind]) sel.value = map[kind];
   }
